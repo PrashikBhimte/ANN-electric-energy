@@ -1,0 +1,27 @@
+#header_div {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+}
+
+#header_div button {
+    width: auto;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    margin: 0px 30px;
+    font-size: 17px;
+}
+
+#header_div button:hover {
+    scale: 1.02;
+}
+
+#header_div button:active {
+    scale: 0.98;
+}
