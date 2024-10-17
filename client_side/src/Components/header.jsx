@@ -6,7 +6,7 @@ export default function Header() {
 
   const handleButtonClick = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/report', { responseType : "blob" });
+      const response = await axios.get('https://ann-electric-energy-server-side-cdne725w4.vercel.app/report', { responseType : "blob" });
       const blob = new Blob([response.data], { type: 'application/pdf' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');

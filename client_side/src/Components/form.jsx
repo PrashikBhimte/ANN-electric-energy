@@ -20,7 +20,7 @@ export default function Form() {
       "RH" : parseInt(param4)
     }
     try {
-      const response = await axios.post('http://127.0.0.1:5000/', body);
+      const response = await axios.post('https://ann-electric-energy-server-side-cdne725w4.vercel.app/', body);
 
       const newText = "The predicted energy is : " + response.data['predictedValue'];
 
