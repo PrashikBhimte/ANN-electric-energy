@@ -1,4 +1,4 @@
-import tensorflow as tf
+from tensorflow.keras.models import load_model
 import numpy as np
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 app.debug = True
 CORS(app)
-ann = tf.keras.models.load_model('./model.keras')
+ann = load_model('./model.keras')
 
 
 @app.route('/', methods=['POST'])

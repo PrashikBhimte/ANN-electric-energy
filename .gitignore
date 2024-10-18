@@ -3,7 +3,7 @@
 # dependencies
 ./client_side/node_modules
 ./client_side/.pnp
-../client_side/pnp.js
+./client_side/pnp.js
 
 # testing
 ./client_side/coverage
@@ -21,3 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
